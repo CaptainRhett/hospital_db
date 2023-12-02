@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>医疗信息服务平台</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/theme.css') }}">
+</head>
+<body>
+    <main class="main">
+      <section class="py-xl bg-cover bg-size--cover" style="background-image: url('../static/pic/backgrounds/hospital.png')">
+        <span class="mask bg-primary alpha-2"></span>
+          <div class="col">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <!-- <div class="card bg-primary text-white"> -->
+                  <div class="card-body">
+                    <button type="button" class="btn btn-primary btn-nobg btn-zoom--hover mb-5">
+                      <span class="btn-inner--icon"><i class="fas fa-arrow-left"></i></span>
+                    </button>
+                    <span class="clearfix"></span>
+                    <img src="../static/pic/brand/icon.png" style="width: 50px;">
+                    <h4 class="heading h4 text-white pt-3 pb-5">欢迎使用医疗信息服务平台！</h4>
+                    <form class="form-primary">
+                      <a href="/register" class="btn btn-block btn-lg bg-white mt-4">注册</a>
+                      <a href="/login" class="btn btn-block btn-lg bg-white mt-4">登录</a>
+                    </form>
+                  </div>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+  </body>

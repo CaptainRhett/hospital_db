@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/theme.css') }}">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark bg-dark py-4">
+      <div class="container">
+        <a class="navbar-brand" href="../"><strong>医疗信息服务平台</strong></a>
+      </div>
+    </nav>
+    <main class="main">
+      <section class="py-xl bg-cover bg-size--cover" style="background-image: url('../static/pic/backgrounds/hospital.png')">
+        <span class="mask bg-primary alpha-2"></span>
+        <div class="container d-flex align-items-center no-padding">
+          <div class="col">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <div class="card bg-primary text-white">
+                  <div class="card-body">
+                    <button type="button" class="btn btn-primary btn-nobg btn-zoom--hover mb-5">
+                      <span class="btn-inner--icon"><i class="fas fa-arrow-left"></i></span>
+                    </button>
+                    <span class="clearfix"></span>
+                    <img src="../static/pic/brand/icon.png" style="width: 50px;">
+                    <h4 class="heading h4 text-white pt-3 pb-5">欢迎登录！<br>
+                      请注册新的用户身份</h4>
+                    <form class="form-primary">
+                      <div class="form-group">
+                        <input type="name" class="form-control" id="input_email" placeholder="请输入您的姓名">
+                      </div>
+                      <div class="form-group">
+                        <input type="ID" class="form-control" id="input_id" placeholder="请输入您的身份证号码" pattern="[1-9]\d{5}(19|20)\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])\d{3}[0-9Xx]">
+                      </div>
+                      <div class="form-group">
+                        <input type="tel" class="form-control" id="input_email" placeholder="请输入您的电话号码">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" id="input_password" placeholder="请设置您的密码">
+                      </div>
+                      <div class="form-group">
+                        <input type="role" class="form-control" id="input_id" placeholder="请输入您的身份(医生/患者)" pattern="(医生||患者)">
+                      </div>
+                    </div>
+                      <button type="submit" class="btn btn-block btn-lg bg-white mt-4">注册</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
